@@ -5,6 +5,7 @@ return [
     'delivery_time_error' => 'سفارش شما در حال ارسال میباشد',
     'report_exists_error' => 'تاخیر سفارش شما در حال پیگیزی میباشد',
     'no_delay_reports_error' => ' رکوردی یافت نشد',
+    'internal_service_error' => 'سیستم با خطا مواجه شد . لطفا مجددا تلاش کنید',
     'record_not_found' => 'نتیجه ای یافت نشد',
     'new_estimate' => 'سفارش شما تا :ESTIMATE دقیقه دیگر به دستتان خواهد رسید',
     'delay_reported' => 'تاخیر سفارش شما در حال بررسی است و نتیجه اعلام خواهد شد',
