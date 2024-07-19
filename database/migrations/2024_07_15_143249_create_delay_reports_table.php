@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('delay_report_status_id')->default(1);
             $table->foreign('delay_report_status_id')->references('id')->on('delay_report_statuses');
             $table->integer('estimated_time')->nullable();
-
+            $table->softDeletes();
             $table->timestamps();
         });
     }
