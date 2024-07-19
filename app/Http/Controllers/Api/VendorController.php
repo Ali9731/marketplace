@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\VendorResource;
+use App\Http\Resources\VendorDelaysResource;
 use App\Repositories\Vendor\VendorRepositoryInterface;
 
 class VendorController extends Controller
@@ -12,6 +12,6 @@ class VendorController extends Controller
 
     public function vendorDelays()
     {
-        return response()->json(VendorResource::collection($this->vendorRepository->mostDelayedVendors(7)));
+        return response()->json(VendorDelaysResource::collection($this->vendorRepository->mostDelayedVendors(7)));
     }
 }

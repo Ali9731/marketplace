@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class DelayReportResource extends JsonResource
+class OrderResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,8 +16,10 @@ class DelayReportResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'agent' => $this->agent->user->name,
-            'order' => OrderResource::make($this->order),
+            'price' => $this->total_price,
+            'delivery_time' => $this->delivery_time,
+            'user' => UserResource::make($this->user),
+            'vendor' => VendorResource::make($this->vendor)
         ];
     }
 }

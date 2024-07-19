@@ -15,8 +15,7 @@ class VendorResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'name' => $this->name,
-            'delays' => $this->delays.' minutes',
+            'name' => $this->name
         ];
     }
 }
