@@ -55,6 +55,7 @@ then choose yes for every questions in cli
 ./commander down
 ```
 ## Api List
+>Set Accept = application/json to receive api-compatible error responses
 - Report order delay
 ```
 "localhost/api/v1/delay-report"
