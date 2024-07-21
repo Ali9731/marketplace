@@ -16,6 +16,8 @@ seeder completely fills all required data</br>
 
 
 > Important: This Project Requires : docker - docker-compose - php composer 
+> 
+> The api given in the document did not work and gave a 404 error, so I used a random number to calculate the delay time.
 
 
 
@@ -34,7 +36,7 @@ Or
     
         2-  docker-compose up -d
 
-        3 - docker exec -it bank_laravel.test_1 bash -c "php artisan migrate && php artisan db:seed"
+        3 - docker exec -it marketplace_laravel.test_1 bash -c "php artisan migrate && php artisan db:seed"
 ```
 
 then choose yes for every questions in cli
